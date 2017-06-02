@@ -8,12 +8,12 @@ public class ExceptionalAdLibs
   {
     String adverb = askAdverb();
     MessageBox.showMessage("The adverb is " + adverb);
-    String edVerb = askEdVerb();
-    MessageBox.showMessage("The -ed Verb is " + edVerb);
+    String edverb = askEdVerb();
+    MessageBox.showMessage("The -ed Verb is " + edverb);
     String bodyPart = askBodyPart();
     MessageBox.showMessage("The body part is " + bodyPart);
     String currentStory = "Today";
-    currentStory = currentStory + "I woke " + adVerb + ". " + "Then I" + edVerb + " " + "my" bodyPart + ". ";
+    currentStory = currentStory + "I woke " + adverb + ". " + "Then I" + edverb + " " + "my" bodyPart + ". ";
     MessageBox.showMessage(currentStory);
   }
   public static String askBodyPart()
@@ -27,7 +27,7 @@ public class ExceptionalAdLibs
     if (bodyPart.matches("[\\d]*")) // That is a regular expression
     {
       MessageBox.showMessage("No body, No story, pay attention and start over");
-      bodyPart = askBodyPart
+      bodyPart = askBodyPart();
     }
     return bodyPart;
   }

@@ -9,10 +9,10 @@ public class AdLibs
     String currentAdverb = MessageBox.askForTextInput("Enter an adverb");
     String currentEdVerb = MessageBox.askForTextInput("Enter an verb ending in -ed");
     String currentBodyPart = MessageBox.askForTextInput("Enter a body part");
-    String currentStory = "Today ";
-    currentStory = currentStory + "I woke " + currentAdverb + ". ";
+    String currentStory = "Today "; // model
+    currentStory = currentStory + "I woke " + currentAdverb + ". "; // controller ?
     currentStory = currentStory + "Then I " + currentEdVerb + " ";
     currentStory = currentStory + "my " + currentBodyPart + ". ";
-    MessageBox.showMessage(currentStory);
+    MessageBox.showMessage(currentStory); // view
   }
 }
